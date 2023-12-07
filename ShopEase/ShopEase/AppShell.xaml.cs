@@ -2,6 +2,8 @@
 {
     public partial class AppShell : Shell
     {
+        public static User active_user = null;
+
         public AppShell()
         {
             InitializeComponent();

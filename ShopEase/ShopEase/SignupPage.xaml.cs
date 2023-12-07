@@ -2,7 +2,9 @@ namespace ShopEase;
 
 public partial class SignupPage : ContentPage
 {
-	public SignupPage()
+    api_handler api_service = new api_handler();
+
+    public SignupPage()
 	{
 		InitializeComponent();
 	}
@@ -31,12 +33,14 @@ public partial class SignupPage : ContentPage
         return text;
     }
 
-    private void signup_Clicked(object sender, EventArgs e)
+    private async void signup_Clicked(object sender, EventArgs e)
     {
-        string signup_first_name = filter_input(email.Text);
-        string signup_last_name = filter_input(password.Text);
+        error.Text = "Please wait, thank you!";
+
+        string signup_first_name = filter_input(first_name.Text);
+        string signup_last_name = filter_input(last_name.Text);
         string signup_email = filter_input(email.Text);
-        string signup_mobile = filter_input(password.Text);
+        string signup_mobile = filter_input(mobile.Text);
         string signup_password = filter_input(password.Text);
         string signup_confirm_password = filter_input(confirm_password.Text);
         string signup_user_type = (consumer.IsChecked) ? consumer.Value.ToString() : retailer.Value.ToString();
@@ -51,7 +55,24 @@ public partial class SignupPage : ContentPage
         }
         else
         {
-
+            int? result = await api_service.AddUser(new User
+            {
+                Name = (signup_first_name + " " + signup_last_name).Trim(),
+                EmailId = signup_email,
+                Mobile = signup_mobile,
+                Password = signup_password,
+                Type = signup_user_type
+            });
+            if (result == null) { error.Text = "Oops, something went wrong! Try again later!"; }
+            else if (result == -2) { error.Text = "Account with entered email-id already exists!"; }
+            else if (result > 0)
+            {
+                reset_Clicked(reset, new EventArgs());
+                error.Text = "Signup successfull!";
+                await DisplayAlert("Congratulations", "New account created successfully!\nWelcome to ShopEase.", "Ok");
+                await Shell.Current.GoToAsync("///LoginPage");
+            }
+            else { error.Text = "Oops, something went wrong! Try again later!"; }
         }
     }
 
