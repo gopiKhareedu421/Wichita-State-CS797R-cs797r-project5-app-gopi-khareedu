@@ -57,7 +57,7 @@
                                 <Label Grid.Row="0" Grid.Column="0" Text="{Binding Id}" TextColor="Black" HorizontalOptions="Start" />
                                 <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" TextColor="Black" HorizontalOptions="Start" />
                                 <Label Grid.Row="0" Grid.Column="2" Text="{Binding Description}" TextColor="Black" HorizontalOptions="Start" />
-                                <Label Grid.Row="0" Grid.Column="3" Text="{Binding Price}" TextColor="Black" HorizontalOptions="Start" />
+                                <Label Grid.Row="0" Grid.Column="3" Text="{Binding Price, StringFormat='${0:F2}'}" TextColor="Black" HorizontalOptions="Start" />
                                 <Label Grid.Row="0" Grid.Column="4" Text="{Binding Stock}" TextColor="Black" HorizontalOptions="Start" />
                                 <Label Grid.Row="0" Grid.Column="5" Text="{Binding CreationDate, StringFormat='{0:dd MMM, yyyy}'}" TextColor="Black" HorizontalOptions="Start" />
                             </Grid>

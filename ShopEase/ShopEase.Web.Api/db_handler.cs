@@ -101,11 +101,20 @@ namespace ShopEase.Web.Api
             catch { return null; }
         }
 
-        public async Task<IEnumerable<ProductViewModel>> QueryAsync(string query, object[] args)
+        public async Task<IEnumerable<ProductViewModel>> ProductQueryAsync(string query, object[] args)
         {
             try
             {
                 return await sqlite_conn.QueryAsync<ProductViewModel>(query, args);
+            }
+            catch { return null; }
+        }
+
+        public async Task<IEnumerable<OrderViewModel>> OrderQueryAsync(string query, object[] args)
+        {
+            try
+            {
+                return await sqlite_conn.QueryAsync<OrderViewModel>(query, args);
             }
             catch { return null; }
         }

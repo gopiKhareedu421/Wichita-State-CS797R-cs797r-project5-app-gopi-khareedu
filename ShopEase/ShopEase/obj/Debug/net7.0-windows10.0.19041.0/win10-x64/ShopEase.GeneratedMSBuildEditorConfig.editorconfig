@@ -54,6 +54,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.ManageProductsPag
 build_metadata.AdditionalFiles.TargetPath = ManageProductsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = ManageProductsPage.xaml
 
+[C:/Projects/Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu/ShopEase/ShopEase/OrdersHistoryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.OrdersHistoryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = OrdersHistoryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = OrdersHistoryPage.xaml
+
+[C:/Projects/Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu/ShopEase/ShopEase/ProductsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.ProductsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProductsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProductsPage.xaml
+
 [C:/Projects/Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu/ShopEase/ShopEase/ProfilePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.ProfilePage.xaml

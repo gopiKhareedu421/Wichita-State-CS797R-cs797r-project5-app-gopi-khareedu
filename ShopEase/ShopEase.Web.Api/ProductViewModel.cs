@@ -11,6 +11,8 @@ namespace ShopEase.Web.Api
         [ForeignKey("RetailerId")]
         public int RetailerId { get; set; }
 
+        public string? RetailerName { get; set; }
+
         public string? Name { get; set; }
 
         public string? Description { get; set; }

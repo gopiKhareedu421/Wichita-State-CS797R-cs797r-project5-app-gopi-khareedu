@@ -27,21 +27,12 @@ public partial class LoginPage : ContentPage
         error.Text = string.Empty;
     }
 
-    private string filter_input(string text)
-    {
-        text = text.Trim();
-        text = text.ToUpper();
-        text = text.Replace("\"", "");
-        text = text.Replace("\'", "");
-        return text;
-    }
-
     private async void login_Clicked(object sender, EventArgs e)
     {
         error.Text = "Please wait, thank you!";
 
-        string login_email = filter_input(email.Text);
-        string login_password = filter_input(password.Text);
+        string login_email = AppShell.filter_input(email.Text);
+        string login_password = AppShell.filter_input(password.Text);
 
         if (login_email == "" || login_password == "")
         {

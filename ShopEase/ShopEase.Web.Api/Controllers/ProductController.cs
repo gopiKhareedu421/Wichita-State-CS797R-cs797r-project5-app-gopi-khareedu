@@ -17,6 +17,7 @@ namespace ShopEase.Web.Api.Controllers
                 ProductViewModel new_product_view_model = new ProductViewModel
                 {
                     RetailerId = new_product.RetailerId,
+                    RetailerName = new_product.RetailerName,
                     Name = new_product.Name,
                     Description = new_product.Description,
                     Price = new_product.Price,
@@ -41,6 +42,7 @@ namespace ShopEase.Web.Api.Controllers
                 {
                     Id = edited_product.Id,
                     RetailerId = edited_product.RetailerId,
+                    RetailerName = edited_product.RetailerName,
                     Name = edited_product.Name,
                     Description = edited_product.Description,
                     Price = edited_product.Price,
@@ -63,7 +65,7 @@ namespace ShopEase.Web.Api.Controllers
             List<Product> retailer_products_list = new List<Product>();
             try
             {
-                IEnumerable<ProductViewModel> result = await db_handler.QueryAsync("SELECT * FROM ProductViewModel WHERE RetailerId=? ORDER BY CreationDate DESC", new object[] { retailer_id });
+                IEnumerable<ProductViewModel> result = await db_handler.ProductQueryAsync("SELECT * FROM ProductViewModel WHERE RetailerId=? ORDER BY CreationDate DESC", new object[] { retailer_id });
                 if (result != null)
                 {
                     foreach (ProductViewModel product in result)
@@ -72,6 +74,7 @@ namespace ShopEase.Web.Api.Controllers
                         {
                             Id = product.Id,
                             RetailerId = product.RetailerId,
+                            RetailerName = product.RetailerName,
                             Name = product.Name,
                             Description = product.Description,
                             Price = product.Price,
@@ -83,6 +86,35 @@ namespace ShopEase.Web.Api.Controllers
             }
             catch {}
             return retailer_products_list;
+        }
+
+        [HttpGet("GetAvailableProducts")]
+        public async Task<IEnumerable<Product>> GetAvailableProducts()
+        {
+            List<Product> available_products_list = new List<Product>();
+            try
+            {
+                IEnumerable<ProductViewModel> result = await db_handler.ProductQueryAsync("SELECT * FROM ProductViewModel WHERE Stock>0 ORDER BY Id DESC", Array.Empty<object>());
+                if (result != null)
+                {
+                    foreach (ProductViewModel product in result)
+                    {
+                        available_products_list.Add(new Product
+                        {
+                            Id = product.Id,
+                            RetailerId = product.RetailerId,
+                            RetailerName = product.RetailerName,
+                            Name = product.Name,
+                            Description = product.Description,
+                            Price = product.Price,
+                            Stock = product.Stock,
+                            CreationDate = product.CreationDate
+                        });
+                    }
+                }
+            }
+            catch { }
+            return available_products_list;
         }
     }
 }

@@ -30,29 +30,29 @@
     <AppXManifest Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-07T16:24:02.727</Modified>
+      <Modified>2023-12-07T16:32:53.336</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-07T16:24:02.412</Modified>
+      <Modified>2023-12-07T16:32:52.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ShopEase.runtimeconfig.json">
       <PackagePath>ShopEase.runtimeconfig.json</PackagePath>
-      <Modified>2023-12-07T16:24:02.135</Modified>
+      <Modified>2023-12-07T16:32:52.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ShopEase.dll">
       <PackagePath>ShopEase.dll</PackagePath>
-      <Modified>2023-12-07T16:24:00.460</Modified>
+      <Modified>2023-12-07T16:32:50.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ShopEase.exe</PackagePath>
-      <Modified>2023-12-07T16:24:00.468</Modified>
+      <Modified>2023-12-07T16:32:50.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ShopEase.deps.json">
       <PackagePath>ShopEase.deps.json</PackagePath>
-      <Modified>2023-12-07T16:24:02.131</Modified>
+      <Modified>2023-12-07T16:32:52.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\abina\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.14\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -940,239 +940,239 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2023-12-07T15:07:06.568</Modified>
+      <Modified>2023-12-07T15:09:19.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.198</Modified>
+      <Modified>2023-12-07T16:30:27.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.212</Modified>
+      <Modified>2023-12-07T16:30:27.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.239</Modified>
+      <Modified>2023-12-07T16:30:28.025</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.266</Modified>
+      <Modified>2023-12-07T16:30:28.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.378</Modified>
+      <Modified>2023-12-07T16:30:28.223</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2023-12-07T15:07:06.468</Modified>
+      <Modified>2023-12-07T15:09:19.027</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2023-12-07T15:07:06.490</Modified>
+      <Modified>2023-12-07T15:09:19.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-12-07T16:23:25.455</Modified>
+      <Modified>2023-12-07T16:30:28.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.778</Modified>
+      <Modified>2023-12-07T16:30:28.887</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.796</Modified>
+      <Modified>2023-12-07T16:30:28.902</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.807</Modified>
+      <Modified>2023-12-07T16:30:28.918</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.824</Modified>
+      <Modified>2023-12-07T16:30:28.948</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.891</Modified>
+      <Modified>2023-12-07T16:30:29.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.567</Modified>
+      <Modified>2023-12-07T16:30:28.578</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.572</Modified>
+      <Modified>2023-12-07T16:30:28.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.587</Modified>
+      <Modified>2023-12-07T16:30:28.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.575</Modified>
+      <Modified>2023-12-07T16:30:28.590</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.579</Modified>
+      <Modified>2023-12-07T16:30:28.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.532</Modified>
+      <Modified>2023-12-07T16:30:28.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.536</Modified>
+      <Modified>2023-12-07T16:30:28.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.562</Modified>
+      <Modified>2023-12-07T16:30:28.574</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.542</Modified>
+      <Modified>2023-12-07T16:30:28.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.551</Modified>
+      <Modified>2023-12-07T16:30:28.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.465</Modified>
+      <Modified>2023-12-07T16:30:28.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.470</Modified>
+      <Modified>2023-12-07T16:30:28.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.479</Modified>
+      <Modified>2023-12-07T16:30:28.462</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.489</Modified>
+      <Modified>2023-12-07T16:30:28.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.497</Modified>
+      <Modified>2023-12-07T16:30:28.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.500</Modified>
+      <Modified>2023-12-07T16:30:28.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.506</Modified>
+      <Modified>2023-12-07T16:30:28.497</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.526</Modified>
+      <Modified>2023-12-07T16:30:28.526</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.510</Modified>
+      <Modified>2023-12-07T16:30:28.505</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.516</Modified>
+      <Modified>2023-12-07T16:30:28.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.655</Modified>
+      <Modified>2023-12-07T16:30:28.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.661</Modified>
+      <Modified>2023-12-07T16:30:28.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.668</Modified>
+      <Modified>2023-12-07T16:30:28.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.675</Modified>
+      <Modified>2023-12-07T16:30:28.744</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.692</Modified>
+      <Modified>2023-12-07T16:30:28.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.623</Modified>
+      <Modified>2023-12-07T16:30:28.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.629</Modified>
+      <Modified>2023-12-07T16:30:28.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.636</Modified>
+      <Modified>2023-12-07T16:30:28.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.642</Modified>
+      <Modified>2023-12-07T16:30:28.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.650</Modified>
+      <Modified>2023-12-07T16:30:28.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.597</Modified>
+      <Modified>2023-12-07T16:30:28.618</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.603</Modified>
+      <Modified>2023-12-07T16:30:28.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.609</Modified>
+      <Modified>2023-12-07T16:30:28.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.611</Modified>
+      <Modified>2023-12-07T16:30:28.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.618</Modified>
+      <Modified>2023-12-07T16:30:28.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.701</Modified>
+      <Modified>2023-12-07T16:30:28.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.707</Modified>
+      <Modified>2023-12-07T16:30:28.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.715</Modified>
+      <Modified>2023-12-07T16:30:28.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.728</Modified>
+      <Modified>2023-12-07T16:30:28.835</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.766</Modified>
+      <Modified>2023-12-07T16:30:28.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.501</Modified>
+      <Modified>2023-12-07T16:30:28.510</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.514</Modified>
+      <Modified>2023-12-07T16:30:28.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.528</Modified>
+      <Modified>2023-12-07T16:30:28.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.551</Modified>
+      <Modified>2023-12-07T16:30:28.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Projects\Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu\ShopEase\ShopEase\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-12-07T16:23:25.607</Modified>
+      <Modified>2023-12-07T16:30:28.670</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -49,21 +49,12 @@ public partial class ManageProductsPage : ContentPage
         product_stock.Text = selected_product.Stock.ToString();
     }
 
-    private string filter_input(string text)
-    {
-        text = text.Trim();
-        text = text.ToUpper();
-        text = text.Replace("\"", "");
-        text = text.Replace("\'", "");
-        return text;
-    }
-
     private async void save_Clicked(object sender, EventArgs e)
     {
-        string name = filter_input(product_name.Text);
-        string price = filter_input(product_price.Text);
-        string stock = filter_input(product_stock.Text);
-        string description = filter_input(product_description.Text);
+        string name = AppShell.filter_input(product_name.Text);
+        string price = AppShell.filter_input(product_price.Text);
+        string stock = AppShell.filter_input(product_stock.Text);
+        string description = AppShell.filter_input(product_description.Text);
 
         if (name == "" || price == "" || stock == "" || description == "") { await DisplayAlert("Alert", "All fields are required for signup!", "Ok"); }
         else
@@ -78,6 +69,7 @@ public partial class ManageProductsPage : ContentPage
                     manage_product(new Product
                     {
                         RetailerId = AppShell.active_user.Id,
+                        RetailerName = AppShell.active_user.Name,
                         Name = name,
                         Description = description,
                         Price = int_price,
@@ -90,6 +82,7 @@ public partial class ManageProductsPage : ContentPage
                     {
                         Id = active_product_id,
                         RetailerId = AppShell.active_user.Id,
+                        RetailerName = AppShell.active_user.Name,
                         Name = name,
                         Description = description,
                         Price = int_price,
@@ -134,6 +127,7 @@ public partial class ManageProductsPage : ContentPage
     {
         try
         {
+            if (product_price.Text == "") { return; }
             product_price.Text = String.Join("", Regex.Matches(product_price.Text, @"\d+"));
             int price = int.Parse(product_price.Text);
             if (price < 1) { product_price.Text = "1"; }
@@ -145,6 +139,7 @@ public partial class ManageProductsPage : ContentPage
     {
         try
         {
+            if (product_stock.Text == "") { return; }
             product_stock.Text = String.Join("", Regex.Matches(product_stock.Text, @"\d+"));
             int price = int.Parse(product_stock.Text);
             if (price < 0) { product_stock.Text = "0"; }

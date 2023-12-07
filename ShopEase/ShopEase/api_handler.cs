@@ -14,6 +14,7 @@ namespace ShopEase
         int result = -1;
         string content;
         string content_type = "application/json";
+        string parameters;
         HttpClient http_client = new();
 
         public async Task<int?> AddUser(User new_user)
@@ -43,6 +44,23 @@ namespace ShopEase
                 http_client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(content_type));
                 http_client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", content_type);
                 StringContent content = new(JsonConvert.SerializeObject(new_product), Encoding.UTF8, content_type);
+                HttpResponseMessage response = await http_client.PostAsync("", content);
+                if (response.IsSuccessStatusCode) { result = int.Parse(response.Content.ReadAsStringAsync().Result); }
+                return result;
+            }
+            catch { return null; }
+        }
+
+        public async Task<int?> AddOrder(Order new_order)
+        {
+            try
+            {
+                result = -1;
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Order/AddOrder");
+                http_client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(content_type));
+                http_client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", content_type);
+                StringContent content = new(JsonConvert.SerializeObject(new_order), Encoding.UTF8, content_type);
                 HttpResponseMessage response = await http_client.PostAsync("", content);
                 if (response.IsSuccessStatusCode) { result = int.Parse(response.Content.ReadAsStringAsync().Result); }
                 return result;
@@ -84,13 +102,30 @@ namespace ShopEase
             catch { return null; }
         }
 
+        public async Task<int?> UpdateOrder(Order edited_order)
+        {
+            try
+            {
+                result = -1;
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Order/UpdateOrder");
+                http_client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(content_type));
+                http_client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", content_type);
+                StringContent content = new(JsonConvert.SerializeObject(edited_order), Encoding.UTF8, content_type);
+                HttpResponseMessage response = await http_client.PutAsync("", content);
+                if (response.IsSuccessStatusCode) { result = int.Parse(response.Content.ReadAsStringAsync().Result); }
+                return result;
+            }
+            catch { return null; }
+        }
+
         public async Task<User?> CheckUserLogin(string email_id, string password)
         {
             try
             {
                 http_client = new HttpClient();
                 http_client.BaseAddress = new Uri("https://localhost:7223/api/User/CheckUserLogin");
-                string parameters = $"?email_id={email_id}&password={password}";
+                parameters = $"?email_id={email_id}&password={password}";
                 HttpResponseMessage response = await http_client.GetAsync(parameters);
                 if (response.IsSuccessStatusCode)
                 {
@@ -108,7 +143,7 @@ namespace ShopEase
             {
                 http_client = new HttpClient();
                 http_client.BaseAddress = new Uri("https://localhost:7223/api/User/SearchUser");
-                string parameters = $"?user_id={user_id}";
+                parameters = $"?user_id={user_id}";
                 HttpResponseMessage response = await http_client.GetAsync(parameters);
                 if (response.IsSuccessStatusCode)
                 {
@@ -126,7 +161,43 @@ namespace ShopEase
             {
                 http_client = new HttpClient();
                 http_client.BaseAddress = new Uri("https://localhost:7223/api/Product/GetRetailerProducts");
-                string parameters = $"?retailer_id={retailer_id}";
+                parameters = $"?retailer_id={retailer_id}";
+                HttpResponseMessage response = await http_client.GetAsync(parameters);
+                if (response.IsSuccessStatusCode)
+                {
+                    content = response.Content.ReadAsStringAsync().Result;
+                    return await Task.FromResult(JsonConvert.DeserializeObject<IEnumerable<Product>>(content));
+                }
+                else { return null; }
+            }
+            catch { return null; }
+        }
+
+        public async Task<IEnumerable<Order>?> GetConsumerOrders(String consumer_id)
+        {
+            try
+            {
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Order/GetConsumerOrders");
+                parameters = $"?consumer_id={consumer_id}";
+                HttpResponseMessage response = await http_client.GetAsync(parameters);
+                if (response.IsSuccessStatusCode)
+                {
+                    content = response.Content.ReadAsStringAsync().Result;
+                    return await Task.FromResult(JsonConvert.DeserializeObject<IEnumerable<Order>>(content));
+                }
+                else { return null; }
+            }
+            catch { return null; }
+        }
+
+        public async Task<IEnumerable<Product>?> GetAvailableProducts()
+        {
+            try
+            {
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Product/GetAvailableProducts");
+                parameters = "";
                 HttpResponseMessage response = await http_client.GetAsync(parameters);
                 if (response.IsSuccessStatusCode)
                 {

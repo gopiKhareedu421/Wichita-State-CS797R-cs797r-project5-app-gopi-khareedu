@@ -14,6 +14,10 @@
                 <Label Text="Account Type:" VerticalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Body" />
                 <Label Text=" Consumer" VerticalOptions="CenterAndExpand" FontSize="Body" />
             </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Joining Date:" VerticalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Body" />
+                <Label x:Name="user_joining_date" VerticalOptions="CenterAndExpand" FontSize="Body" />
+            </StackLayout>
             <StackLayout Orientation="Horizontal" Padding="40" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <Frame CornerRadius="5" BackgroundColor="Green" Margin="5">
                     <StackLayout Orientation="Vertical" WidthRequest="150">

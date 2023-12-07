@@ -9,15 +9,6 @@ public partial class ProfilePage : ContentPage
 		InitializeComponent();
 	}
 
-    private string filter_input(string text)
-    {
-        text = text.Trim();
-        text = text.ToUpper();
-        text = text.Replace("\"", "");
-        text = text.Replace("\'", "");
-        return text;
-    }
-
     protected override void OnAppearing()
     {
         base.OnAppearing();
@@ -53,11 +44,11 @@ public partial class ProfilePage : ContentPage
     {
         error.Text = "Please wait, thank you!";
 
-        string profile_first_name = filter_input(first_name.Text);
-        string profile_last_name = filter_input(last_name.Text);
-        string profile_email = filter_input(email.Text);
-        string profile_mobile = filter_input(mobile.Text);
-        string profile_address = filter_input(address.Text);
+        string profile_first_name = AppShell.filter_input(first_name.Text);
+        string profile_last_name = AppShell.filter_input(last_name.Text);
+        string profile_email = AppShell.filter_input(email.Text);
+        string profile_mobile = AppShell.filter_input(mobile.Text);
+        string profile_address = AppShell.filter_input(address.Text);
 
         if (profile_first_name == "" || profile_last_name == "" || profile_email == "" || profile_mobile == "" || profile_address == "")
         {
@@ -83,9 +74,9 @@ public partial class ProfilePage : ContentPage
     {
         error.Text = "Please wait, thank you!";
 
-        string profile_old_password = filter_input(old_password.Text);
-        string profile_new_password = filter_input(new_password.Text);
-        string profile_confirm_password = filter_input(confirm_password.Text);
+        string profile_old_password = AppShell.filter_input(old_password.Text);
+        string profile_new_password = AppShell.filter_input(new_password.Text);
+        string profile_confirm_password = AppShell.filter_input(confirm_password.Text);
 
         if (profile_old_password == "" || profile_new_password == "" || profile_confirm_password == "") { error.Text = "All fields are required for signup!"; }
         else if (AppShell.active_user.Password != profile_old_password) { error.Text = "Incorrect old password!"; }

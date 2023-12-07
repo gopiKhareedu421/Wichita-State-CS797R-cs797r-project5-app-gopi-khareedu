@@ -31,26 +31,17 @@ public partial class SignupPage : ContentPage
         Shell.Current.GoToAsync("///LoginPage");
     }
 
-    private string filter_input(string text)
-    {
-        text = text.Trim();
-        text = text.ToUpper();
-        text = text.Replace("\"", "");
-        text = text.Replace("\'", "");
-        return text;
-    }
-
     private async void signup_Clicked(object sender, EventArgs e)
     {
         error.Text = "Please wait, thank you!";
 
-        string signup_first_name = filter_input(first_name.Text);
-        string signup_last_name = filter_input(last_name.Text);
-        string signup_email = filter_input(email.Text);
-        string signup_mobile = filter_input(mobile.Text);
-        string signup_address = filter_input(address.Text);
-        string signup_password = filter_input(password.Text);
-        string signup_confirm_password = filter_input(confirm_password.Text);
+        string signup_first_name = AppShell.filter_input(first_name.Text);
+        string signup_last_name = AppShell.filter_input(last_name.Text);
+        string signup_email = AppShell.filter_input(email.Text);
+        string signup_mobile = AppShell.filter_input(mobile.Text);
+        string signup_address = AppShell.filter_input(address.Text);
+        string signup_password = AppShell.filter_input(password.Text);
+        string signup_confirm_password = AppShell.filter_input(confirm_password.Text);
         string signup_user_type = (consumer.IsChecked) ? consumer.Value.ToString() : retailer.Value.ToString();
 
         if (signup_first_name == "" || signup_last_name == "" || signup_email == "" || signup_mobile == "" || signup_address == "" || signup_password == "" || signup_confirm_password == "")

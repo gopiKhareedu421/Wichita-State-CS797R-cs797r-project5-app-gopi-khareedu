@@ -14,11 +14,17 @@ namespace ShopEase.Web.Api
         [ForeignKey("ProductId")]
         public int ProductId { get; set; }
 
+        public string? ProductName { get; set; }
+
+        public string? ProductDescription { get; set; }
+
         public int Quantity { get; set; }
 
         public int Price { get; set; }
 
         public int TotalAmount { get; set; }
+
+        public string? Address { get; set; }
 
         public string Status { get; set; } = "ORDER PLACED";
 

@@ -24,12 +24,24 @@
             about_page.IsVisible = true;
             profile_page.IsVisible = user_is_active;
             manage_products_page.IsVisible = (user_is_active && !user_is_consumer);
+            products_page.IsVisible = (user_is_active && user_is_consumer);
+            orders_history_page.IsVisible = (user_is_active && user_is_consumer);
 
             login_page.IsVisible = !user_is_active;
             signup_page.IsVisible = !user_is_active;
 
             consumer_dashboard_page.IsVisible = (user_is_active && user_is_consumer);
             retailer_dashboard_page.IsVisible = (user_is_active && !user_is_consumer);
+        }
+
+        public static string filter_input(string text)
+        {
+            text = text.Trim();
+            text = text.ToUpper();
+            text = text.Replace("|", "");
+            text = text.Replace("\"", "");
+            text = text.Replace("\'", "");
+            return text;
         }
     }
 }
