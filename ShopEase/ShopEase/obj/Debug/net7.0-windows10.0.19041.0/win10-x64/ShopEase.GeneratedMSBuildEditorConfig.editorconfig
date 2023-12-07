@@ -12,6 +12,12 @@ build_property.ProjectDir = C:\Projects\Wichita-State-CS797R-cs797r-project5-app
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
+[C:/Projects/Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu/ShopEase/ShopEase/AboutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.AboutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AboutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AboutPage.xaml
+
 [C:/Projects/Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu/ShopEase/ShopEase/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.App.xaml
@@ -23,6 +29,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Projects/Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu/ShopEase/ShopEase/ConsumerDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.ConsumerDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ConsumerDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ConsumerDashboardPage.xaml
 
 [C:/Projects/Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu/ShopEase/ShopEase/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -47,6 +59,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Projects/Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu/ShopEase/ShopEase/RetailerDashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ShopEase.RetailerDashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RetailerDashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RetailerDashboardPage.xaml
 
 [C:/Projects/Wichita-State-CS797R-cs797r-project5-app-gopi-khareedu/ShopEase/ShopEase/SignupPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

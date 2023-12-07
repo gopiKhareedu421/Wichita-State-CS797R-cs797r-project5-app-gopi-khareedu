@@ -6,10 +6,16 @@
     <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="AboutPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="App.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="AppShell.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="ConsumerDashboardPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="LoginPage.xaml">
@@ -25,6 +31,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Resources\Styles\Styles.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="RetailerDashboardPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="SignupPage.xaml">

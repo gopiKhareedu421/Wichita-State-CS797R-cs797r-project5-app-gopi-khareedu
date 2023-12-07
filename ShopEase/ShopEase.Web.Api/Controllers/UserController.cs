@@ -18,6 +18,7 @@ namespace ShopEase.Web.Api.Controllers
                     Name = new_user.Name,
                     EmailId = new_user.EmailId,
                     Mobile = new_user.Mobile,
+                    Address = new_user.Address,
                     Password = new_user.Password,
                     Type = new_user.Type,
                 };
@@ -41,6 +42,7 @@ namespace ShopEase.Web.Api.Controllers
                     Name = edited_user.Name,
                     EmailId = edited_user.EmailId,
                     Mobile = edited_user.Mobile,
+                    Address = edited_user.Address,
                     Password = edited_user.Password,
                     Type = edited_user.Type,
                     JoiningDate = edited_user.JoiningDate,
@@ -68,6 +70,7 @@ namespace ShopEase.Web.Api.Controllers
                         Name = check_user.Name,
                         EmailId = check_user.EmailId,
                         Mobile = check_user.Mobile,
+                        Address = check_user.Address,
                         Password = check_user.Password,
                         Type = check_user.Type,
                         JoiningDate = check_user.JoiningDate,
@@ -75,7 +78,7 @@ namespace ShopEase.Web.Api.Controllers
                 }
             }
             catch { }
-            return new User{ Id = 0, Name = "", EmailId = "", Mobile = "", Password = "" };
+            return new User{ Id = 0, Name = "", EmailId = "", Mobile = "", Address = "", Password = "" };
         }
     }
 }

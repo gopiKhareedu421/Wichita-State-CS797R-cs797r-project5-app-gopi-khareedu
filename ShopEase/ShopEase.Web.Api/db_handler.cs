@@ -14,6 +14,8 @@ namespace ShopEase.Web.Api
         {
             sqlite_conn = new SQLiteAsyncConnection(file_path);
             sqlite_conn.CreateTableAsync<UserViewModel>().Wait();
+            sqlite_conn.CreateTableAsync<ProductViewModel>().Wait();
+            sqlite_conn.CreateTableAsync<OrderViewModel>().Wait();
         }
 
         public async Task<int> AddAsync(UserViewModel new_user)

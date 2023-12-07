@@ -16,14 +16,14 @@
                 </Label>
 
                 <Entry x:Name="email" Text="" MaxLength="100" WidthRequest="400" Placeholder="Email" FontSize="Body" Keyboard="Email" Margin="10,5,10,0" />
-                <Entry x:Name="password" Text="" MaxLength="15" WidthRequest="400" Placeholder="Password" FontSize="Body" IsPassword="True" Margin="10,5,10,0" />
+                <Entry x:Name="password" Text="" MaxLength="15" WidthRequest="400" Placeholder="Password" FontSize="Body" IsPassword="True" Margin="10,5,10,20" />
 
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="40">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="40, 0, 40, 30">
                     <Button Text="Reset" WidthRequest="80" HeightRequest="20" BackgroundColor="Red" FontAttributes="Bold" FontSize="Body" x:Name="reset" Clicked="reset_Clicked" Margin="0, 0, 5, 0" />
                     <Button Text="Login" WidthRequest="80" HeightRequest="20" BackgroundColor="Green" FontAttributes="Bold" FontSize="Body" x:Name="login" Clicked="login_Clicked" Margin="5, 0, 0, 0" />
                 </StackLayout>
 
-                <Label x:Name="error" TextColor="Red" FontAttributes="Bold" FontSize="Body" Margin="0, 10, 0, 0" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" />
+                <Label x:Name="error" TextColor="Red" FontAttributes="Bold" FontSize="Body" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" />
             </StackLayout>
         </VerticalStackLayout>
     </ScrollView>

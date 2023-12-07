@@ -7,20 +7,27 @@
         public AppShell()
         {
             InitializeComponent();
-            splash_loading_completed(false);
         }
 
         public void switch_splash_screen()
         {
-            splash_loading_completed(true);
+            manage_tabs();
             welcome_splash_screen.IsVisible = false;
             Shell.Current.GoToAsync("///LoginPage");
         }
 
-        public void splash_loading_completed(bool completed)
+        public void manage_tabs()
         {
-            login_page.IsVisible = completed;
-            signup_page.IsVisible = completed;
+            bool user_is_active = (active_user != null);
+            bool user_is_consumer = (user_is_active && active_user.Type == "C");
+
+            about_page.IsVisible = true;
+
+            login_page.IsVisible = !user_is_active;
+            signup_page.IsVisible = !user_is_active;
+
+            consumer_dashboard_page.IsVisible = (user_is_active && user_is_consumer);
+            retailer_dashboard_page.IsVisible = (user_is_active && !user_is_consumer);
         }
     }
 }

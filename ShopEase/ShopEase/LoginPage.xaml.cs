@@ -51,6 +51,10 @@ public partial class LoginPage : ContentPage
                 reset_Clicked(reset, new EventArgs());
                 AppShell.active_user = login_user;
                 error.Text = "Login successfull!";
+                await DisplayAlert("Welcome", "Login successfull", "Ok");
+                ((AppShell)App.Current.MainPage).manage_tabs();
+                if (login_user.Type == "C") { await Shell.Current.GoToAsync("///ConsumerDashboardPage"); }
+                else { await Shell.Current.GoToAsync("///RetailerDashboardPage"); }
             }
         }
     }

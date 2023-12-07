@@ -10,6 +10,8 @@
 
         public required string Mobile { get; set; }
 
+        public required string Address { get; set; }
+
         public required string Password { get; set; }
 
         public string Type { get; set; }

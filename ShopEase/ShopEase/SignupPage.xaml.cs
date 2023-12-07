@@ -15,6 +15,7 @@ public partial class SignupPage : ContentPage
         last_name.Text = string.Empty;
         email.Text = string.Empty;
         mobile.Text = string.Empty;
+        address.Text = string.Empty;
         password.Text = string.Empty;
         confirm_password.Text = string.Empty;
     }
@@ -41,11 +42,12 @@ public partial class SignupPage : ContentPage
         string signup_last_name = filter_input(last_name.Text);
         string signup_email = filter_input(email.Text);
         string signup_mobile = filter_input(mobile.Text);
+        string signup_address = filter_input(address.Text);
         string signup_password = filter_input(password.Text);
         string signup_confirm_password = filter_input(confirm_password.Text);
         string signup_user_type = (consumer.IsChecked) ? consumer.Value.ToString() : retailer.Value.ToString();
 
-        if (signup_first_name == "" || signup_last_name == "" || signup_email == "" || signup_mobile == "" || signup_password == "" || signup_confirm_password == "")
+        if (signup_first_name == "" || signup_last_name == "" || signup_email == "" || signup_mobile == "" || signup_address == "" || signup_password == "" || signup_confirm_password == "")
         {
             error.Text = "All fields are required for signup!";
         }
@@ -60,6 +62,7 @@ public partial class SignupPage : ContentPage
                 Name = (signup_first_name + " " + signup_last_name).Trim(),
                 EmailId = signup_email,
                 Mobile = signup_mobile,
+                Address = signup_address,
                 Password = signup_password,
                 Type = signup_user_type
             });
