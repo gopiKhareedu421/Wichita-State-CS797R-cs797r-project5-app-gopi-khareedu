@@ -191,6 +191,24 @@ namespace ShopEase
             catch { return null; }
         }
 
+        public async Task<IEnumerable<Order>?> GetOrdersForRetailer(String retailer_id)
+        {
+            try
+            {
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Order/GetOrdersForRetailer");
+                parameters = $"?retailer_id={retailer_id}";
+                HttpResponseMessage response = await http_client.GetAsync(parameters);
+                if (response.IsSuccessStatusCode)
+                {
+                    content = response.Content.ReadAsStringAsync().Result;
+                    return await Task.FromResult(JsonConvert.DeserializeObject<IEnumerable<Order>>(content));
+                }
+                else { return null; }
+            }
+            catch { return null; }
+        }
+
         public async Task<IEnumerable<Product>?> GetAvailableProducts()
         {
             try
@@ -205,6 +223,104 @@ namespace ShopEase
                     return await Task.FromResult(JsonConvert.DeserializeObject<IEnumerable<Product>>(content));
                 }
                 else { return null; }
+            }
+            catch { return null; }
+        }
+
+        public async Task<int?> GetConsumerUniqueItemsCount(String consumer_id)
+        {
+            try
+            {
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Counter/GetConsumerUniqueItemsCount");
+                parameters = $"?consumer_id={consumer_id}";
+                HttpResponseMessage response = await http_client.GetAsync(parameters);
+                if (response.IsSuccessStatusCode) { result = int.Parse(response.Content.ReadAsStringAsync().Result); }
+                return result;
+            }
+            catch { return null; }
+        }
+
+        public async Task<int?> GetConsumerTotalOrdersCount(String consumer_id)
+        {
+            try
+            {
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Counter/GetConsumerTotalOrdersCount");
+                parameters = $"?consumer_id={consumer_id}";
+                HttpResponseMessage response = await http_client.GetAsync(parameters);
+                if (response.IsSuccessStatusCode) { result = int.Parse(response.Content.ReadAsStringAsync().Result); }
+                return result;
+            }
+            catch { return null; }
+        }
+
+        public async Task<int?> GetConsumerTotalPurchaseAmount(String consumer_id)
+        {
+            try
+            {
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Counter/GetConsumerTotalPurchaseAmount");
+                parameters = $"?consumer_id={consumer_id}";
+                HttpResponseMessage response = await http_client.GetAsync(parameters);
+                if (response.IsSuccessStatusCode) { result = int.Parse(response.Content.ReadAsStringAsync().Result); }
+                return result;
+            }
+            catch { return null; }
+        }
+
+        public async Task<int?> GetRetailerProductsCount(String retailer_id)
+        {
+            try
+            {
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Counter/GetRetailerProductsCount");
+                parameters = $"?retailer_id={retailer_id}";
+                HttpResponseMessage response = await http_client.GetAsync(parameters);
+                if (response.IsSuccessStatusCode) { result = int.Parse(response.Content.ReadAsStringAsync().Result); }
+                return result;
+            }
+            catch { return null; }
+        }
+
+        public async Task<int?> GetRetailerOrdersCount(String retailer_id)
+        {
+            try
+            {
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Counter/GetRetailerOrdersCount");
+                parameters = $"?retailer_id={retailer_id}";
+                HttpResponseMessage response = await http_client.GetAsync(parameters);
+                if (response.IsSuccessStatusCode) { result = int.Parse(response.Content.ReadAsStringAsync().Result); }
+                return result;
+            }
+            catch { return null; }
+        }
+
+        public async Task<int?> GetRetailerPendingOrdersCount(String retailer_id)
+        {
+            try
+            {
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Counter/GetRetailerPendingOrdersCount");
+                parameters = $"?retailer_id={retailer_id}";
+                HttpResponseMessage response = await http_client.GetAsync(parameters);
+                if (response.IsSuccessStatusCode) { result = int.Parse(response.Content.ReadAsStringAsync().Result); }
+                return result;
+            }
+            catch { return null; }
+        }
+
+        public async Task<int?> GetRetailerTotalSales(String retailer_id)
+        {
+            try
+            {
+                http_client = new HttpClient();
+                http_client.BaseAddress = new Uri("https://localhost:7223/api/Counter/GetRetailerTotalSales");
+                parameters = $"?retailer_id={retailer_id}";
+                HttpResponseMessage response = await http_client.GetAsync(parameters);
+                if (response.IsSuccessStatusCode) { result = int.Parse(response.Content.ReadAsStringAsync().Result); }
+                return result;
             }
             catch { return null; }
         }

@@ -24,6 +24,9 @@
     <MauiXaml Update="MainPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="ManageOrdersPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="ManageProductsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

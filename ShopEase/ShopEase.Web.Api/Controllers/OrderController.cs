@@ -87,5 +87,37 @@ namespace ShopEase.Web.Api.Controllers
             catch { }
             return consumer_orders_list;
         }
+
+        [HttpGet("GetOrdersForRetailer")]
+        public async Task<IEnumerable<Order>> GetOrdersForRetailer(String retailer_id)
+        {
+            List<Order> retailer_orders_list = new List<Order>();
+            try
+            {
+                IEnumerable<OrderViewModel> result = await db_handler.OrderQueryAsync("SELECT * FROM OrderViewModel WHERE ProductId IN (SELECT Id FROM ProductViewModel WHERE RetailerId=?) ORDER BY OrderDate DESC", new object[] { retailer_id });
+                if (result != null)
+                {
+                    foreach (OrderViewModel order in result)
+                    {
+                        retailer_orders_list.Add(new Order
+                        {
+                            Id = order.Id,
+                            ConsumerId = order.ConsumerId,
+                            ProductId = order.ProductId,
+                            ProductName = order.ProductName,
+                            ProductDescription = order.ProductDescription,
+                            Quantity = order.Quantity,
+                            Price = order.Price,
+                            TotalAmount = order.TotalAmount,
+                            Address = order.Address,
+                            Status = order.Status,
+                            OrderDate = order.OrderDate
+                        });
+                    }
+                }
+            }
+            catch { }
+            return retailer_orders_list;
+        }
     }
 }

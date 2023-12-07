@@ -24,6 +24,7 @@
             about_page.IsVisible = true;
             profile_page.IsVisible = user_is_active;
             manage_products_page.IsVisible = (user_is_active && !user_is_consumer);
+            manage_orders_page.IsVisible = (user_is_active && !user_is_consumer);
             products_page.IsVisible = (user_is_active && user_is_consumer);
             orders_history_page.IsVisible = (user_is_active && user_is_consumer);
 
