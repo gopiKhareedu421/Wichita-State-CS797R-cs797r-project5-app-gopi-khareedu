@@ -9,6 +9,12 @@ public partial class LoginPage : ContentPage
 		InitializeComponent();
 	}
 
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        reset_Clicked(reset, new EventArgs());
+    }
+
     private void goto_sign_up(object sender, TappedEventArgs e)
     {
         Shell.Current.GoToAsync("///SignupPage");

@@ -32,7 +32,7 @@ namespace ShopEase.Web.Api.Controllers
         }
 
         [HttpPut("UpdateUser")]
-        public async Task<bool> UpdateUser(User edited_user)
+        public async Task<int> UpdateUser(User edited_user)
         {
             try
             {
@@ -49,11 +49,11 @@ namespace ShopEase.Web.Api.Controllers
                 };
 
                 int email_counts = await db_handler.ScalarQueryAsync("SELECT COUNT(*) FROM UserViewModel WHERE EmailId=? AND Id<>?", new object[] { edited_user_view_model.EmailId, edited_user_view_model.Id });
-                if (email_counts > 0) { return false; }
+                if (email_counts > 0) { return -2; }
 
                 return await db_handler.UpdateAsync(edited_user_view_model);
             } catch { }
-            return false;
+            return -1;
         }
 
         [HttpGet("CheckUserLogin")]
@@ -79,6 +79,31 @@ namespace ShopEase.Web.Api.Controllers
             }
             catch { }
             return new User{ Id = 0, Name = "", EmailId = "", Mobile = "", Address = "", Password = "" };
+        }
+
+        [HttpGet("SearchUser")]
+        public async Task<User> SearchUser(String user_id)
+        {
+            try
+            {
+                UserViewModel search_user = await db_handler.FindWithQueryAsync("SELECT * FROM UserViewModel WHERE Id=? LIMIT 1", new object[] { user_id });
+                if (search_user != null)
+                {
+                    return new User
+                    {
+                        Id = search_user.Id,
+                        Name = search_user.Name,
+                        EmailId = search_user.EmailId,
+                        Mobile = search_user.Mobile,
+                        Address = search_user.Address,
+                        Password = search_user.Password,
+                        Type = search_user.Type,
+                        JoiningDate = search_user.JoiningDate,
+                    };
+                }
+            }
+            catch { }
+            return new User { Id = 0, Name = "", EmailId = "", Mobile = "", Address = "", Password = "" };
         }
     }
 }

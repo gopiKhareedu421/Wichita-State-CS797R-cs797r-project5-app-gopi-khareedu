@@ -9,6 +9,12 @@ public partial class SignupPage : ContentPage
 		InitializeComponent();
 	}
 
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        reset_Clicked(reset, new EventArgs());
+    }
+
     private void reset_Clicked(object sender, EventArgs e)
     {
         first_name.Text = string.Empty;

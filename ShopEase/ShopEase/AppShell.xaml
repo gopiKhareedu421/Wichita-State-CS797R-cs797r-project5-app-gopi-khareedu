@@ -13,7 +13,9 @@
         <Tab Title="Login" IsVisible="False" x:Name="login_page"><ShellContent Title="Login" ContentTemplate="{DataTemplate local:LoginPage}" Route="LoginPage" /></Tab>
         <Tab Title="Signup" IsVisible="False" x:Name="signup_page"><ShellContent Title="Signup" ContentTemplate="{DataTemplate local:SignupPage}" Route="SignupPage" /></Tab>
         <Tab Title="Dashboard" IsVisible="False" x:Name="retailer_dashboard_page"><ShellContent Title="Dashboard" ContentTemplate="{DataTemplate local:RetailerDashboardPage}" Route="RetailerDashboardPage" /></Tab>
+        <Tab Title="Manage Products" IsVisible="False" x:Name="manage_products_page"><ShellContent Title="Manage Products" ContentTemplate="{DataTemplate local:ManageProductsPage}" Route="ManageProductsPage" /></Tab>
         <Tab Title="Dashboard" IsVisible="False" x:Name="consumer_dashboard_page"><ShellContent Title="Dashboard" ContentTemplate="{DataTemplate local:ConsumerDashboardPage}" Route="ConsumerDashboardPage" /></Tab>
+        <Tab Title="Profile" IsVisible="False" x:Name="profile_page"><ShellContent Title="Profile" ContentTemplate="{DataTemplate local:ProfilePage}" Route="ProfilePage" /></Tab>
         <Tab Title="About" IsVisible="False" x:Name="about_page"><ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}" Route="AboutPage" /></Tab>
     </TabBar>
 
